@@ -6,25 +6,27 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	akashclient "github.com/ovrclk/akash/client"
-	dtypes "github.com/ovrclk/akash/x/deployment/types/v1beta2"
-	mtypes "github.com/ovrclk/akash/x/market/types/v1beta2"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
+
+	akashclient "github.com/ovrclk/akash/client"
+	dtypes "github.com/ovrclk/akash/x/deployment/types/v1beta2"
+	mtypes "github.com/ovrclk/akash/x/market/types/v1beta2"
 
 	"github.com/ovrclk/akash/app"
 )
 
 const (
-	FlagService  = "service"
-	FlagProvider = "provider"
-	FlagDSeq     = "dseq"
-	FlagGSeq     = "gseq"
-	FlagOSeq     = "oseq"
-	flagOutput   = "output"
-	flagFollow   = "follow"
-	flagTail     = "tail"
+	FlagService         = "service"
+	FlagProvider        = "provider"
+	FlagDSeq            = "dseq"
+	FlagGSeq            = "gseq"
+	FlagOSeq            = "oseq"
+	flagOutput          = "output"
+	flagFollow          = "follow"
+	flagTail            = "tail"
+	FlagJwtExpiresAfter = "jwt-expires-after"
 )
 
 const (
